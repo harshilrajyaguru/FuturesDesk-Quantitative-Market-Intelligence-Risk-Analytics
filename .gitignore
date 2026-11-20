@@ -1,0 +1,78 @@
+# Data — never commit raw tick data (root only; nested data/ dirs like alpha_lab/data are code)
+/data/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# pytest
+.pytest_cache/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Secrets / credentials
+*.pem
+*.key
+*.env
+secrets.py
+config/local.py
+.claude/
+
+# Logs and profiling
+*.log
+*.prof
+
+# Generated cache files
+research/notebooks/_cache_*.csv
+trade_log_*.csv
+
+# Paper trader runtime logs (keep directory, ignore contents)
+paper_trader/logs/*.csv
+paper_trader/logs/*.json
+# per-arm logs from the multi-arm harness
+paper_trader/logs/arms/
+
+ALPHA_RESEARCH.md
+PAPER_TRADING_PLAN.md
+STUDY_NOTES.md
+# Recon analysis data (synced from VPS)
+basecamp_recon/recon_data/
+
+# pairs/OU research artifacts (data panels, synced from VPS)
+research/pairs_ou/out/
+
+# alpha_lab stored history (pulled from Dhan, regenerable)
+alpha_lab/data/out/
+
+# LaTeX build artifacts (keep .tex, .pdf, figures)
+*.aux
+*.out
+*.toc
+*.synctex.gz
